@@ -1,0 +1,7 @@
+<launch>
+  <node name="flat_imu" pkg="odom_base" type= "odom_base" output="screen">
+    <remap from="imu_in" to="/mobile_base/sensors/imu_data" />
+    <remap from="imu_out" to="/imu" />
+  </node>
+</launch>
+  
